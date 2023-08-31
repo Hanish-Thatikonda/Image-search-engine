@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search engine</title>
+</head>
+<style>
+    #first{
+        /* border: 2px solid; */
+        width: 300px;
+        margin: auto;
+        text-align: center;
+
+    }
+    input{
+        height: 40px;
+        width: 380px;
+        font-size: 15px;
+    }
+    #second{
+        /* border: 2px solid; */
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    img{
+        height: 150px;
+        width: 200px;
+    }
+    body{
+            background-image: url("./images/1000_F_148748366_BKmJs1zHClJl12VA2GV6bBolhPUPleon.jpg");
+            background-repeat: repeat-y;
+        }
+        button{
+            height: 30px;
+            width: 90px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        button:hover{
+            background-color: rgb(111, 182, 5);
+            color: green;
+            cursor: pointer;
+        }
+        p{
+            color: rgb(18, 95, 131);
+            font-weight: bold;
+        }
+</style>
+<body>
+    <div id="first">
+        <marquee behavior="" direction=""><p>Website created by Hanish</p></marquee>
+        <h1>Search for Images</h1>
+    <input type="search" name="search" id="search" autocomplete="off" placeholder='for example "cars"'>
+    <br>
+    <br>
+    <button id="btn">submit</button>
+    </div>
+    <br>
+    <div id="second">
+
+    </div>
+    <footer>
+        <h4>Credits: Images by <a href="https://pixabay.com/" target="_blank">Pixabay.com</a></h4>
+    </footer>
+    
+    <script src="./pixabay_fetch.js"></script>
+</body>
+</html>
