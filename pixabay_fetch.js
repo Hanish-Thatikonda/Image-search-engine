@@ -10,7 +10,7 @@ btn.addEventListener("click", (e)=>{
     }
     console.log(search.value);
    
-        window.fetch(`https://pixabay.com/api/?key=39166637-0c41cc4e2f55dd4a0ab2fc585&q=${search.value}&image_type=photo`)
+        window.fetch(`https://pixabay.com/api/?key=38192665-2d3ab1349b930bd3f02761df2&q=${search.value}&image_type=photo`)
     .then((data)=>
         data.json()
     )
